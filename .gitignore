@@ -1,0 +1,5 @@
+*.pack
+client/.angular/cache/16.0.4/babel-webpack/0a0dc64b4f37db113c0ba7c1978c86bab661e1293e29db8938889c5f17226b6a.json
+client/
+node_modules
+package-lock.json
