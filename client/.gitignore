@@ -1,42 +1,43 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+# Dependency directories
+/node_modules
 
 # Compiled output
 /dist
-/tmp
-/out-tsc
-/bazel-out
+/dist-out
+/coverage
 
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
+# Environment variables
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# IDEs and editors
-.idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+# IDE and editor files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+*.user
+*.bak
+*.cache
+*.log
+*.npmrc
 
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
+# Build artifacts
+*.js.map
+*.css.map
+*.ngsummary.json
+*.ngstyle.js
+*.ngfactory.js
+
+# Test files
+/__tests__
 
 # Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
-
-# System files
 .DS_Store
 Thumbs.db
