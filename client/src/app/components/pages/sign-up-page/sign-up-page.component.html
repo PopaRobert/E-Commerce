@@ -1,0 +1,21 @@
+<div class="sign-up-page">
+	<div class="sign-up-form-container">
+		<form [formGroup]="signUpForm" (ngSubmit)="onSubmit()" class="form">
+			<input
+				type="email"
+				formControlName="email"
+				placeholder="Email"
+				class="input-field"
+			/>
+			<input
+				type="password"
+				formControlName="password"
+				placeholder="Password"
+				class="input-field"
+			/>
+			<button type="submit" class="submit-btn" [disabled]="!signUpForm.valid"
+				>Sign Up</button
+			>
+		</form>
+	</div>
+</div>

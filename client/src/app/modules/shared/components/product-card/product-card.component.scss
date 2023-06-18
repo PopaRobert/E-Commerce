@@ -1,0 +1,59 @@
+.card {
+	border-radius: 8px;
+	padding: 16px;
+	width: 300px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	text-align: center;
+}
+
+.name {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.image {
+	width: 100%;
+	height: auto;
+	margin-bottom: 8px;
+}
+
+.price {
+	font-weight: bold;
+	color: #333;
+}
+
+.full-star {
+	color: gold;
+}
+
+.empty-star {
+	color: gray;
+}
+
+.reviews {
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.average-rating {
+	margin-left: 8px;
+	font-weight: bold;
+	color: gray;
+}
+
+.total-reviews {
+	margin-left: 2px;
+	font-weight: bold;
+	color: gray;
+}

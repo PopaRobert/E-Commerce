@@ -1,0 +1,17 @@
+<img class="image" [src]="product.image_link" alt="Product Image" />
+<span class="name">{{ product.name }}</span>
+<div class="reviews-price">
+	<div class="reviews">
+		<span *ngFor="let star of getFilledStars(calculateAverageRating(product))">
+			<mat-icon class="full-star">star</mat-icon>
+		</span>
+		<span *ngFor="let star of getEmptyStars(calculateAverageRating(product))">
+			<mat-icon class="empty-star">star</mat-icon>
+		</span>
+		<span class="average-rating">{{
+			calculateAverageRating(product) | number : '1.1-2'
+		}}</span>
+		<span class="total-reviews">({{ getTotalReviews(product) }})</span>
+	</div>
+</div>
+<span class="price">Price: {{ product.price }}</span>

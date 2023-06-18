@@ -1,0 +1,18 @@
+<mat-toolbar class="top-nav"  color="accent">
+    <img src="https://s13emagst.akamaized.net/layout/ro/images/logo//59/88362.svg"class="logo" (click)="onHome()">
+    <div fxFlex fxLayout="row" fxLayoutAlign="center center" class="navigation-actions">
+        <button mat-button color="primary" class="navigation-action" (click)="onAccount()">
+            <mat-icon>account_circle</mat-icon>
+            Account    
+        </button>
+        <button mat-button color="primary" (click)="onFavorites()" class="navigation-action">
+            <mat-icon>favorite_border</mat-icon>
+            Favorites
+        </button>
+        <button mat-button color="primary" (click)="onCart()" class="navigation-action">
+            <mat-icon>shopping_cart</mat-icon>
+            Cart
+        </button>    
+    </div>
+  </mat-toolbar>
+  

@@ -14,6 +14,11 @@ import { ProductsCarouselComponent } from './components/pages/home-page/products
 import { IvyCarouselModule } from 'carousel-angular';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ProductCardComponent } from './modules/shared/components/product-card/product-card.component';
+import { SignInPageComponent } from './components/pages/sign-in-page/sign-in-page.component';
+import { SignUpPageComponent } from './components/pages/sign-up-page/sign-up-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AuthService } from './modules/core/services/auth.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
 	declarations: [
@@ -23,7 +28,9 @@ import { ProductCardComponent } from './modules/shared/components/product-card/p
 		MyAccountPageComponent,
 		AddsCarouselComponent,
 		ProductsCarouselComponent,
-  ProductCardComponent,
+		ProductCardComponent,
+		SignInPageComponent,
+		SignUpPageComponent,
 	],
 	imports: [
 		BrowserModule,
@@ -33,8 +40,10 @@ import { ProductCardComponent } from './modules/shared/components/product-card/p
 		MatButtonModule,
 		IvyCarouselModule,
 		SlickCarouselModule,
+		ReactiveFormsModule,
+		HttpClientModule,
 	],
-	providers: [],
+	providers: [AuthService],
 	bootstrap: [AppComponent],
 })
 export class AppModule {}

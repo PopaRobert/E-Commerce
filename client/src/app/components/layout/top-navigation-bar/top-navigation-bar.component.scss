@@ -1,0 +1,33 @@
+.top-nav {
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+}
+
+.logo {
+	height: 80px;
+	width: 150px;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navigation-action {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+}
+
+.navigation-actions {
+	display: flex;
+}
+
+.top-nav .logo {
+	cursor: pointer;
+}
